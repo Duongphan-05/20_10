@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7d1f45" />
+  <meta name="description" content="Lời chúc 20/10 dành riêng cho các đồng chí nữ Chi bộ Sinh viên." />
+  <title>Thư yêu thương · 20/10</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%237d1f45'/%3E%3Cpath d='M16 21h32v25H16z' fill='%23fff7f1'/%3E%3Cpath d='m16 23 16 13 16-13' fill='none' stroke='%23d94f7a' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <style>
+    :root {
+      --wine: #7d1f45;
+      --wine-deep: #4b112e;
+      --rose: #d94f7a;
+      --blush: #fff1f3;
+      --cream: #fffaf6;
+      --ink: #341b29;
+      --muted: #785a68;
+      --gold: #d8a24b;
+      --shadow: 0 24px 70px rgba(91, 25, 57, 0.16);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(255,255,255,.85) 0 7%, transparent 20%),
+        radial-gradient(circle at 91% 14%, rgba(255,223,231,.7) 0 10%, transparent 28%),
+        linear-gradient(155deg, #fff8f3 0%, #fff1f4 54%, #f9e4ed 100%);
+      font-family: "Segoe UI", Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      inset: auto;
+      z-index: -1;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      filter: blur(5px);
+      opacity: .34;
+      pointer-events: none;
+    }
+    body::before { left: -110px; bottom: 8%; background: #edb4c7; }
+    body::after { right: -100px; top: 42%; background: #e7b9a6; }
+
+    .shell {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 22px 0 48px;
+    }
+
+    .topbar {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 46px;
+      color: var(--wine-deep);
+      font-size: .9rem;
+      padding-bottom: 34px;
+    }
+    .seal {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: none;
+      text-align: left;
+    }
+    .brand-copy { display: grid; gap: 5px; }
+    .brand-copy > span { font-size: 1rem; }
+    .school-logo {
+      display: block;
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 7px 18px rgba(125,31,69,.16);
+    }
+    .date-chip {
+      padding: 8px 12px;
+      border: 1px solid rgba(125,31,69,.18);
+      border-radius: 999px;
+      background: rgba(255,255,255,.45);
+      letter-spacing: .02em;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(320px, .92fr);
+      gap: clamp(34px, 7vw, 90px);
+      align-items: center;
+      min-height: 540px;
+      padding: 32px 0 58px;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--rose);
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { content: "✦"; color: var(--gold); font-size: 1rem; }
+    h1 {
+      max-width: 650px;
+      margin: 18px 0 16px;
+      color: var(--wine-deep);
+      font-size: clamp(3.1rem, 7.2vw, 6.5rem);
+      font-weight: 500;
+      letter-spacing: -.02em;
+      line-height: 1.02;
+    }
+    h1 em { color: var(--rose); font-style: italic; }
+    .intro {
+      max-width: 540px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1.07rem, 2vw, 1.28rem);
+      line-height: 1.7;
+    }
+
+    .institution {
+      position: absolute;
+      top: 66px;
+      left: 50%;
+      z-index: 1;
+      width: min(100%, 760px);
+      max-width: 760px;
+      margin: 0;
+      transform: translateX(-50%);
+      color: var(--wine-deep);
+      font-size: clamp(.9rem, 1.8vw, 1.08rem);
+      font-weight: 700;
+      line-height: 1.45;
+      letter-spacing: 0;
+      text-align: center;
+    }
+    .institution span {
+      display: block;
+      color: var(--rose);
+      font-size: .88em;
+      font-weight: 600;
+    }
+
+    .name-card {
+      position: relative;
+      padding: clamp(24px, 4vw, 38px);
+      border: 1px solid rgba(125,31,69,.14);
+      border-radius: 26px;
+      background: rgba(255,255,255,.74);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(9px);
+    }
+    .name-card::before {
+      content: "";
+      position: absolute;
+      top: -16px;
+      right: 26px;
+      width: 64px;
+      height: 26px;
+      border: 1px solid rgba(125,31,69,.13);
+      border-bottom: 0;
+      border-radius: 40px 40px 0 0;
+      background: rgba(255,255,255,.74);
+    }
+    .card-kicker {
+      margin: 0 0 10px;
+      color: var(--rose);
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .name-card h2 { margin: 0 0 9px; font-size: clamp(1.7rem, 3vw, 2.25rem); font-weight: 500; }
+    .name-card p { margin: 0 0 22px; color: var(--muted); line-height: 1.55; }
+    label { display: block; margin-bottom: 8px; color: var(--wine-deep); font-size: .95rem; font-weight: 700; }
+    .input-row { display: flex; gap: 10px; }
+    input {
+      width: 100%;
+      min-height: 50px;
+      padding: 13px 15px;
+      border: 1px solid rgba(125,31,69,.23);
+      border-radius: 13px;
+      outline: none;
+      color: var(--ink);
+      background: #fffdfb;
+      font: inherit;
+      font-size: 1rem;
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+    input:focus { border-color: var(--rose); box-shadow: 0 0 0 4px rgba(217,79,122,.14); }
+    button {
+      min-height: 50px;
+      border: 0;
+      border-radius: 13px;
+      padding: 0 19px;
+      color: #fff;
+      background: var(--wine);
+      cursor: pointer;
+      font: 700 .96rem/1 "Segoe UI", Arial, sans-serif;
+      white-space: nowrap;
+      box-shadow: 0 9px 20px rgba(125,31,69,.2);
+      transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
+    }
+    button:hover { transform: translateY(-2px); background: var(--wine-deep); box-shadow: 0 13px 25px rgba(125,31,69,.25); }
+    button:active { transform: translateY(0); }
+    .hint { min-height: 20px; margin: 10px 0 0; color: #ae3c62; font: .86rem "Segoe UI", Arial, sans-serif; }
+
+    .letter-zone {
+      display: none;
+      padding: 22px 0 64px;
+      animation: rise .65s ease both;
+    }
+    .letter-zone.visible { display: block; }
+    .letter-heading { text-align: center; }
+    .letter-heading h2 { margin: 0 0 8px; color: var(--wine-deep); font-size: clamp(2rem, 4vw, 3rem); font-weight: 500; }
+    .letter-heading p { margin: 0 auto 30px; color: var(--muted); font-size: 1.05rem; }
+    .envelope-wrap { display: grid; place-items: center; min-height: 520px; perspective: 1200px; }
+    .envelope {
+      position: relative;
+      width: min(100%, 520px);
+      height: 315px;
+      cursor: pointer;
+      filter: drop-shadow(0 22px 27px rgba(93, 31, 57, .2));
+      transition: transform .25s ease;
+    }
+    .envelope:hover { transform: translateY(-4px) rotate(-.4deg); }
+    .envelope-back,
+    .envelope-front,
+    .envelope-flap {
+      position: absolute;
+      inset: 0;
+      border-radius: 16px;
+    }
+    .envelope-back { background: linear-gradient(145deg, #efb6c2, #d97998); }
+    .envelope-front {
+      z-index: 4;
+      clip-path: polygon(0 0, 50% 57%, 100% 0, 100% 100%, 0 100%);
+      background: linear-gradient(160deg, #df7d99, #c85479);
+    }
+    .envelope-flap {
+      z-index: 5;
+      transform-origin: top center;
+      clip-path: polygon(0 0, 100% 0, 50% 59%);
+      background: linear-gradient(160deg, #f2c3cc, #dc87a2);
+      transition: transform .78s cubic-bezier(.25,.8,.25,1), z-index .1s linear .38s;
+    }
+    .envelope.open .envelope-flap { z-index: 2; transform: rotateX(180deg); }
+    .letter-paper {
+      position: absolute;
+      z-index: 3;
+      left: 7%;
+      right: 7%;
+      top: 17px;
+      min-height: 274px;
+      padding: 34px clamp(22px, 6vw, 45px) 26px;
+      border: 1px solid rgba(125,31,69,.12);
+      border-radius: 10px;
+      background: #fffdf8;
+      box-shadow: 0 8px 20px rgba(89,36,55,.12);
+      transform: translateY(7px);
+      transition: transform .75s cubic-bezier(.25,.8,.25,1) .34s;
+      overflow: visible;
+    }
+    .envelope.open .letter-paper {
+      z-index: 7;
+      transform: translateY(-150px) scale(1.03);
+    }
+    .letter-paper::after { content: "❀"; position: absolute; right: 17px; bottom: 11px; color: #e8afba; font-size: 1.7rem; opacity: .75; }
+    .letter-paper .to { margin: 0 0 15px; color: var(--rose); font: 700 .86rem "Segoe UI", Arial, sans-serif; letter-spacing: .02em; }
+    .letter-paper h3 { margin: 0 0 15px; color: var(--wine-deep); font-size: clamp(1.45rem, 3vw, 2rem); font-weight: 500; }
+    .letter-paper .wish { margin: 0; color: #553746; font-size: clamp(1rem, 2.1vw, 1.14rem); line-height: 1.75; }
+    .letter-paper .sign { margin: 18px 0 0; color: var(--wine); font-style: italic; text-align: right; }
+    .open-hint {
+      position: absolute;
+      z-index: 8;
+      left: 50%;
+      bottom: -24px;
+      transform: translateX(-50%);
+      padding: 8px 13px;
+      border-radius: 999px;
+      color: var(--wine-deep);
+      background: rgba(255,255,255,.82);
+      font: .83rem "Segoe UI", Arial, sans-serif;
+      white-space: nowrap;
+      box-shadow: 0 6px 15px rgba(89,36,55,.1);
+    }
+    .envelope.open .open-hint { opacity: 0; pointer-events: none; }
+
+    .after-letter { display: none; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 7px; }
+    .after-letter.visible { display: flex; }
+    .ghost-button { color: var(--wine); background: transparent; border: 1px solid rgba(125,31,69,.3); box-shadow: none; }
+    .ghost-button:hover { color: #fff; background: var(--wine); }
+
+    footer { padding-top: 12px; color: rgba(75,17,46,.63); font: .82rem "Segoe UI", Arial, sans-serif; text-align: center; }
+
+    .heart {
+      position: fixed;
+      z-index: -1;
+      color: rgba(217,79,122,.32);
+      font-size: 17px;
+      pointer-events: none;
+      animation: drift 9s linear infinite;
+    }
+    .heart:nth-child(1) { left: 8%; bottom: -20px; animation-delay: 1s; }
+    .heart:nth-child(2) { left: 28%; bottom: -30px; animation-delay: 4s; font-size: 12px; }
+    .heart:nth-child(3) { right: 21%; bottom: -20px; animation-delay: 2.4s; }
+    .heart:nth-child(4) { right: 8%; bottom: -30px; animation-delay: 5s; font-size: 13px; }
+    @keyframes drift { to { transform: translateY(-108vh) rotate(35deg); opacity: 0; } }
+    @keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+    @media (max-width: 780px) {
+      .shell { width: min(100% - 24px, 640px); padding-top: 16px; }
+      .topbar { margin-bottom: 22px; }
+      .hero { grid-template-columns: 1fr; min-height: auto; padding: 25px 0 48px; gap: 34px; }
+      h1 { font-size: clamp(3.1rem, 15vw, 5.2rem); }
+      .name-card { padding: 24px 20px; }
+      .input-row { flex-direction: column; }
+      .input-row button { width: 100%; }
+      .letter-zone { padding-top: 8px; }
+      .envelope-wrap { min-height: 450px; }
+      .envelope { height: 260px; }
+      .letter-paper { min-height: 230px; padding-top: 25px; }
+      .envelope.open .letter-paper { transform: translateY(-124px) scale(1.01); }
+    }
+
+    @media (max-width: 480px) {
+      .topbar { align-items: flex-start; gap: 10px; }
+      .school-logo { width: 44px; height: 44px; border-radius: 10px; }
+      .seal { font-size: .78rem; line-height: 1.25; }
+      .date-chip { padding: 7px 9px; font-size: .75rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <span class="heart">♥</span><span class="heart">♡</span><span class="heart">♥</span><span class="heart">♡</span>
+  <main class="shell">
+    <header class="topbar">
+      <div class="seal">
+        <img class="school-logo" src="LOGO_DHXD.png" alt="Logo Trường Đại học Xây dựng Hà Nội" />
+        <div class="brand-copy">
+          <span>Trường Đại học Xây dựng Hà Nội</span>
+          <p class="institution">Đảng ủy Trường Đại học Xây dựng Hà Nội<span>Chi bộ Sinh viên</span></p>
+        </div>
+      </div>
+      <span class="date-chip">20 · 10 · 2026</span>
+    </header>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <div class="eyebrow">Một điều nhỏ, gửi thật lòng</div>
+        <h1 id="page-title">Thư gửi những <em>bông hoa</em> tháng Mười.</h1>
+        <p class="intro">Mỗi đồng chí nữ sẽ nhận được một lời chúc riêng. Hãy nhập họ và tên để mở bức thư dành cho mình nhé.</p>
+      </div>
+
+      <form class="name-card" id="name-form">
+        <p class="card-kicker">Bước 01 · Nhận thư</p>
+        <h2>Xin chào, đồng chí!</h2>
+        <p>Điền đầy đủ họ và tên để lời chúc gọi đúng tên bạn.</p>
+        <label for="full-name">Họ và tên</label>
+        <div class="input-row">
+          <input id="full-name" name="full-name" type="text" autocomplete="name" placeholder="" required />
+          <button type="submit">Nhận thư</button>
+        </div>
+        <p class="hint" id="form-hint" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="letter-zone" id="letter-zone" aria-live="polite">
+      <div class="letter-heading">
+        <div class="eyebrow">Bước 02 · Mở thư</div>
+        <h2 id="letter-title">Một lời nhắn dành riêng cho bạn</h2>
+        <p>Chạm vào phong bì để mở điều bất ngờ.</p>
+      </div>
+
+      <div class="envelope-wrap">
+        <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Mở bức thư">
+          <div class="envelope-back"></div>
+          <article class="letter-paper" aria-label="Nội dung lời chúc">
+            <p class="to">Gửi <span id="recipient-name">bạn</span>,</p>
+            <h3>Chúc mừng ngày 20/10!</h3>
+            <p class="wish" id="wish-text"></p>
+            <p class="sign">Thân mến,<br />Các đồng chí trong Chi bộ Sinh viên</p>
+          </article>
+          <div class="envelope-flap"></div>
+          <div class="envelope-front"></div>
+          <span class="open-hint">Chạm để mở thư ✦</span>
+        </div>
+      </div>
+
+      <div class="after-letter" id="after-letter">
+        <button type="button" class="ghost-button" id="new-letter">Nhận lời chúc khác</button>
+      </div>
+
+    </section>
+
+    <footer>Với tất cả sự trân trọng và yêu thương · 20/10</footer>
+  </main>
+
+  <script>
+    (() => {
+      const wishes = [
+        "Chúc bạn luôn giữ được sự dịu dàng trong tim, sự mạnh mẽ trong lựa chọn và thật nhiều niềm vui trên hành trình phía trước.",
+        "Mong mỗi ngày của bạn đều có một lý do để mỉm cười, một người để sẻ chia và một ước mơ đủ lớn để bước tiếp.",
+        "Chúc bạn học tập thật tốt, làm điều mình tin là đúng và luôn được yêu thương theo cách bạn xứng đáng.",
+        "Mong sự nhiệt thành của bạn tiếp tục thắp sáng tập thể, còn những điều tốt đẹp sẽ tìm đến bạn thật tự nhiên.",
+        "Chúc bạn đủ bản lĩnh để đi qua những ngày bận rộn, đủ bình yên để lắng nghe mình và đủ hạnh phúc để thấy mọi nỗ lực đều đáng giá.",
+        "Hy vọng tuổi trẻ của bạn luôn có những người đồng hành tử tế, những kỷ niệm rực rỡ và thật nhiều lần tự hào về chính mình.",
+        "Chúc bạn tỏa sáng theo cách riêng: không cần giống ai, chỉ cần chân thành, tự tin và luôn là phiên bản mình yêu quý nhất.",
+        "Mong những dự định bạn ấp ủ sẽ dần thành hình, những cố gắng thầm lặng sẽ được nhìn thấy và những ngày mai luôn dịu dàng với bạn.",
+        "Chúc bạn luôn là nguồn năng lượng ấm áp của tập thể, đồng thời cũng nhớ dành sự dịu dàng ấy cho chính mình.",
+        "Mong bạn có thật nhiều sức khỏe, niềm tin và cảm hứng để biến từng trang thanh xuân thành một câu chuyện thật đẹp.",
+        "Chúc bạn đi qua năm tháng sinh viên với một trái tim trong trẻo, một tinh thần kiên định và những người bạn đáng quý bên cạnh.",
+        "Mong mọi điều bạn trao đi đều trở lại bằng những niềm vui bất ngờ. Chúc bạn một ngày 20/10 thật rạng rỡ và đáng nhớ."
+      ];
+
+      const form = document.getElementById('name-form');
+      const nameInput = document.getElementById('full-name');
+      const hint = document.getElementById('form-hint');
+      const zone = document.getElementById('letter-zone');
+      const envelope = document.getElementById('envelope');
+      const recipient = document.getElementById('recipient-name');
+      const wishText = document.getElementById('wish-text');
+      const afterLetter = document.getElementById('after-letter');
+      const newLetter = document.getElementById('new-letter');
+
+      function hashName(value) {
+        let hash = 0;
+        for (let i = 0; i < value.length; i += 1) hash = ((hash << 5) - hash) + value.charCodeAt(i);
+        return Math.abs(hash);
+      }
+
+      function openLetter() {
+        envelope.classList.add('open');
+        afterLetter.classList.add('visible');
+      }
+
+      function prepareLetter(name) {
+        const cleanName = name.replace(/\s+/g, ' ').trim();
+        const index = hashName(cleanName.toLocaleLowerCase('vi-VN')) % wishes.length;
+        recipient.textContent = cleanName;
+        wishText.textContent = `${cleanName} thân mến, ${wishes[index]}`;
+        envelope.classList.remove('open');
+        afterLetter.classList.remove('visible');
+        zone.classList.add('visible');
+        hint.textContent = 'Bức thư đã sẵn sàng — kéo xuống để mở nhé.';
+        window.setTimeout(() => zone.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
+      }
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const value = nameInput.value.trim();
+        if (value.length < 2) {
+          hint.textContent = 'Bạn vui lòng nhập họ và tên đầy đủ nhé.';
+          nameInput.focus();
+          return;
+        }
+        prepareLetter(value);
+      });
+
+      envelope.addEventListener('click', openLetter);
+      envelope.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          openLetter();
+        }
+      });
+
+      newLetter.addEventListener('click', () => {
+        zone.classList.remove('visible');
+        nameInput.value = '';
+        nameInput.focus();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+    })();
+  </script>
+</body>
+</html>
