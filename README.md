@@ -1,4 +1,4 @@
-# Thư yêu thương · 20/10
+# Thư yêu thương · 20/10 Chi Bộ Sinh Viên
 
 Trang web chúc mừng ngày 20/10 dành cho các đồng chí nữ trong Chi bộ Sinh viên.
 
