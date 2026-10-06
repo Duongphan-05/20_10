@@ -444,18 +444,18 @@
   <script>
     (() => {
       const wishes = [
-        "Chúc bạn luôn giữ được sự dịu dàng trong tim, sự mạnh mẽ trong lựa chọn và thật nhiều niềm vui trên hành trình phía trước.",
-        "Mong mỗi ngày của bạn đều có một lý do để mỉm cười, một người để sẻ chia và một ước mơ đủ lớn để bước tiếp.",
-        "Chúc bạn học tập thật tốt, làm điều mình tin là đúng và luôn được yêu thương theo cách bạn xứng đáng.",
-        "Mong sự nhiệt thành của bạn tiếp tục thắp sáng tập thể, còn những điều tốt đẹp sẽ tìm đến bạn thật tự nhiên.",
-        "Chúc bạn đủ bản lĩnh để đi qua những ngày bận rộn, đủ bình yên để lắng nghe mình và đủ hạnh phúc để thấy mọi nỗ lực đều đáng giá.",
-        "Hy vọng tuổi trẻ của bạn luôn có những người đồng hành tử tế, những kỷ niệm rực rỡ và thật nhiều lần tự hào về chính mình.",
-        "Chúc bạn tỏa sáng theo cách riêng: không cần giống ai, chỉ cần chân thành, tự tin và luôn là phiên bản mình yêu quý nhất.",
-        "Mong những dự định bạn ấp ủ sẽ dần thành hình, những cố gắng thầm lặng sẽ được nhìn thấy và những ngày mai luôn dịu dàng với bạn.",
-        "Chúc bạn luôn là nguồn năng lượng ấm áp của tập thể, đồng thời cũng nhớ dành sự dịu dàng ấy cho chính mình.",
-        "Mong bạn có thật nhiều sức khỏe, niềm tin và cảm hứng để biến từng trang thanh xuân thành một câu chuyện thật đẹp.",
-        "Chúc bạn đi qua năm tháng sinh viên với một trái tim trong trẻo, một tinh thần kiên định và những người bạn đáng quý bên cạnh.",
-        "Mong mọi điều bạn trao đi đều trở lại bằng những niềm vui bất ngờ. Chúc bạn một ngày 20/10 thật rạng rỡ và đáng nhớ."
+        "{{name}}, chúc bạn luôn giữ được sự dịu dàng trong tim, sự mạnh mẽ trong lựa chọn và thật nhiều niềm vui trên hành trình phía trước.",
+        "{{name}}, mong mỗi ngày của bạn đều có một lý do để mỉm cười, một người để sẻ chia và một ước mơ đủ lớn để bước tiếp.",
+        "{{name}}, chúc bạn học tập thật tốt, làm điều mình tin là đúng và luôn được yêu thương theo cách bạn xứng đáng.",
+        "{{name}}, mong sự nhiệt thành của bạn tiếp tục thắp sáng tập thể, còn những điều tốt đẹp sẽ tìm đến bạn thật tự nhiên.",
+        "{{name}}, chúc bạn đủ bản lĩnh để đi qua những ngày bận rộn, đủ bình yên để lắng nghe mình và đủ hạnh phúc để thấy mọi nỗ lực đều đáng giá.",
+        "{{name}}, hy vọng tuổi trẻ của bạn luôn có những người đồng hành tử tế, những kỷ niệm rực rỡ và thật nhiều lần tự hào về chính mình.",
+        "{{name}}, chúc bạn tỏa sáng theo cách riêng: không cần giống ai, chỉ cần chân thành, tự tin và luôn là phiên bản mình yêu quý nhất.",
+        "{{name}}, mong những dự định bạn ấp ủ sẽ dần thành hình, những cố gắng thầm lặng sẽ được nhìn thấy và những ngày mai luôn dịu dàng với bạn.",
+        "{{name}}, chúc bạn luôn là nguồn năng lượng ấm áp của tập thể, đồng thời cũng nhớ dành sự dịu dàng ấy cho chính mình.",
+        "{{name}}, mong bạn có thật nhiều sức khỏe, niềm tin và cảm hứng để biến từng trang thanh xuân thành một câu chuyện thật đẹp.",
+        "{{name}}, chúc bạn đi qua năm tháng sinh viên với một trái tim trong trẻo, một tinh thần kiên định và những người bạn đáng quý bên cạnh.",
+        "{{name}}, mong mọi điều bạn trao đi đều trở lại bằng những niềm vui bất ngờ. Chúc bạn một ngày 20/10 thật rạng rỡ và đáng nhớ."
       ];
 
       const form = document.getElementById('name-form');
@@ -483,7 +483,7 @@
         const cleanName = name.replace(/\s+/g, ' ').trim();
         const index = hashName(cleanName.toLocaleLowerCase('vi-VN')) % wishes.length;
         recipient.textContent = cleanName;
-        wishText.textContent = `${cleanName} thân mến, ${wishes[index]}`;
+        wishText.textContent = wishes[index].replace(/\{\{name\}\}/g, cleanName);
         envelope.classList.remove('open');
         afterLetter.classList.remove('visible');
         zone.classList.add('visible');
